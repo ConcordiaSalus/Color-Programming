@@ -13,3 +13,5 @@ __- LinearGradientHex ( start, end = "#FFFFFF", n = 10 )__
 
     LinearGradients_and_LinearInterpolation.py
     GenerateGradientColors.py
+
+![GenerateGradientColors.PNG](Images/GenerateGradientColors.PNG)
