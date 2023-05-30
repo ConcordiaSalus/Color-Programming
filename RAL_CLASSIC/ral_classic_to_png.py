@@ -27,4 +27,4 @@ with open( 'RAL_CLASSIC/ral_classic.csv', newline = '' ) as csvfile:
         font = ImageFont.truetype('/System/Library/Fonts/Helvetica', 16)
         draw.text((10, 290), row[2], fill=(0, 0, 0), font=font)
 
-        im.save(folder_picture + '/' + filename, "PNG")
+        im.save( folder_picture + '/' + filename, "PNG" )
