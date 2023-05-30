@@ -13,10 +13,8 @@ with open( 'RAL_CLASSIC/ral_classic.csv', newline = '' ) as csvfile:
     next( spamreader )
     for row in spamreader:
         filename = row[ 0 ] + '.png'
-
-        print ( int(row[ 3 ] ), int(row[ 4 ] ), int(row[ 5 ]) )
        
-        im = Image.new("RGB", (222, 337), (int(row[ 3 ]), int(row[ 4 ]), int(row[ 5 ])))
+        im = Image.new(" RGB ", ( 222, 337 ), (int(row[ 3 ]), int(row[ 4 ]), int(row[ 5 ])))
         draw = ImageDraw.Draw(im)
         draw.rectangle([(0, 223), (222, 337)], (255, 255, 255))
         
