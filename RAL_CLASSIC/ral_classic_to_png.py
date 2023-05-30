@@ -6,9 +6,9 @@ from os import path, mkdir
 folder_picture = 'RAL_CLASSIC/ral_classic_images'
 
 if not path.exists( folder_picture ):
-    mkdir(folder_picture)
+    mkdir( folder_picture )
 
-with open('RAL_CLASSIC/ral_classic.csv', newline='') as csvfile:
+with open( 'RAL_CLASSIC/ral_classic.csv', newline = '' ) as csvfile:
     spamreader = csv.reader( csvfile, delimiter = ',', quotechar = '|' )
     next( spamreader )
     for row in spamreader:
