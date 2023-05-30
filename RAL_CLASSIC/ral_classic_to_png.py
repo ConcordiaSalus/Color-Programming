@@ -15,17 +15,17 @@ with open( 'RAL_CLASSIC/ral_classic.csv', newline = '' ) as csvfile:
         filename = row[ 0 ] + '.png'
        
         im = Image.new( "RGB", ( 222, 337 ), ( int( row[ 3 ]), int( row[ 4 ] ), int( row[ 5 ] ) ) )
-        draw = ImageDraw.Draw(im)
+        draw = ImageDraw.Draw( im )
         draw.rectangle( [ ( 0, 223 ), ( 222, 337 ) ], ( 255, 255, 255 ) )
         
-        font = ImageFont.truetype('/System/Library/Fonts/Helvetica.ttc', 32)
-        draw.text((10, 230), row[ 0 ] , fill=( 0, 0, 0 ), font=font)
+        font = ImageFont.truetype( '/System/Library/Fonts/Helvetica.ttc', 32 )
+        draw.text( ( 10, 230 ), row[ 0 ] , fill = ( 0, 0, 0 ), font = font )
 
-        font = ImageFont.truetype('/System/Library/Fonts/Helvetica', 16)
-        draw.text((10, 270), row[ 1 ] , fill=(0, 0, 0), font=font)
+        font = ImageFont.truetype( '/System/Library/Fonts/Helvetica', 16 )
+        draw.text( ( 10, 270 ), row[ 1 ] , fill = ( 0, 0, 0 ), font = font )
 
-        font = ImageFont.truetype('/System/Library/Fonts/Helvetica', 16)
-        draw.text((10, 290), row[2], fill=(0, 0, 0), font=font)
+        font = ImageFont.truetype( '/System/Library/Fonts/Helvetica', 16 )
+        draw.text( ( 10, 290 ), row[ 2 ], fill = ( 0, 0, 0 ), font = font )
 
         if path.exists( folder_picture + '/' + filename ):
             remove( folder_picture + '/' + filename )
