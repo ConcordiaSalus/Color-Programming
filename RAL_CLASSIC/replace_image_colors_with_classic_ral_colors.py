@@ -78,8 +78,8 @@ def Delta_E_1994 ( CIE_L1, CIE_a1, CIE_b1, CIE_L2, CIE_a2, CIE_b2 ):
     return Delta_E_1994
 
 
-filename = 'Lenna_(test_image).png'
-filepath = f"RAL_CLASSIC/images/{filename}"
+filename                = 'Lenna_(test_image).png'
+filepath                = f"RAL_CLASSIC/images/{filename}"
 
 ral_classic             = []
 
@@ -101,7 +101,7 @@ print( f"Original image: {filename}" )
 print( f"Size: {width} x {height} pixels" )
 print( f"Mode: {mode}" )
 
-res_ral_classic_final   = []
+res_ral_classic_final       = []
 
 for i in range( width ): 
     for j in range( height ):
@@ -134,6 +134,3 @@ for i in range( width ):
 #print ( res_ral_classic_final )
 
 imResult.save("RAL_CLASSIC/images/Lenna_(result_test_image).png", "PNG")
-
-
-
