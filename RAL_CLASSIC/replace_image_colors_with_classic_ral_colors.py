@@ -129,8 +129,14 @@ for i in range( width ):
                            int( res_ral_classic[ 0 ][ 2 ] ), 
                            int( res_ral_classic[ 0 ][ 3 ] ) ) )
 
-        res_ral_classic_final.append( [ rgbr, rgbg, rgbb, res_ral_classic[0][0], res_ral_classic[0][1], res_ral_classic[0][2], res_ral_classic[0][3] ] )
+        res_ral_classic_final.append( [ rgbr, 
+                                       rgbg, 
+                                       rgbb, 
+                                       res_ral_classic[ 0 ][ 0 ], 
+                                       res_ral_classic[ 0 ][ 1 ], 
+                                       res_ral_classic[ 0 ][ 2 ], 
+                                       res_ral_classic[ 0 ][ 3 ] ] )
 
-#print ( res_ral_classic_final )
+print ( res_ral_classic_final )
 
 imResult.save("RAL_CLASSIC/images/Lenna_(result_test_image).png", "PNG")
