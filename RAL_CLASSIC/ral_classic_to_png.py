@@ -12,7 +12,7 @@ with open( 'RAL_CLASSIC/ral_classic.csv', newline = '' ) as csvfile:
     spamreader = csv.reader( csvfile, delimiter = ',', quotechar = '|' )
     next( spamreader )
     for row in spamreader:
-        filename = row[ 0 ] + '.png'
+        filename = row[ 0 ].replace( " ", "_" ) + '.png'
        
         im = Image.new( "RGB", ( 222, 337 ), ( int( row[ 3 ]), int( row[ 4 ] ), int( row[ 5 ] ) ) )
         draw = ImageDraw.Draw( im )
